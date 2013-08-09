@@ -28,12 +28,12 @@
 				$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
 		?>
 		<div>
-<!-- 
-  <div data-caption="#caption_<?php the_ID(); ?>">
+
+<!--   <div data-caption="#caption_<?php the_ID(); ?>">
     <h4><?php the_title(); ?></h4>
     <p><?php the_excerpt(); ?></p>
-  </div> -->
-  
+  </div> 
+   -->
 			<?php if(has_post_thumbnail()) :?>
 			<?php 
 				the_post_thumbnail('wpf-home-featured', "") ?>
