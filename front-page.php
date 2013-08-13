@@ -3,7 +3,7 @@
 <?php
 			global $post;
 			$tmp_post = $post;
-			$args = array(  'post_type' => 'highlight', 'numberposts' => 20 );
+			$args = array(  'post_type' => 'post_highlight', 'numberposts' => 20 );
 			$myposts = get_posts( $args );
 			foreach( $myposts as $post ) : setup_postdata($post); 
 			?>
@@ -13,7 +13,7 @@
   </span> 
 			<?php endforeach;?>
 
-	<div id="content">
+	
 <?php
 	$orbit_slider = of_get_option('orbit_slider');
 	if ($orbit_slider){
@@ -27,7 +27,7 @@
 			// escreve os cabeçalhos
 			global $post;
 			$tmp_post = $post;
-			$args = array(  'post_type' => 'highlight', 'numberposts' => 20 );
+			$args = array(  'post_type' => 'post_highlight', 'numberposts' => 20 );
 			$myposts = get_posts( $args );
 			foreach( $myposts as $post ) : setup_postdata($post); 
 				$post_thumbnail_id = get_post_thumbnail_id();
@@ -58,8 +58,8 @@
 
 <?php } ?>
 
-
-<div id="main" class="row" role="main">
+<div id="content">
+<div id="main" class="twelve columns" role="main">
 	
 		<h1>Serviços</h1>
 

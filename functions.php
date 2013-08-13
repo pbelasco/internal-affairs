@@ -573,11 +573,11 @@ add_action('save_post', 'save_homepage_meta');
 //Registrando novo tipo de Post - HighLights
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
-    register_post_type( 'highlight',
+    register_post_type( 'post_highlight',
         array(
             'labels' => array(
-                'name' => __( 'Highlights' ),
-                'singular_name' => __( 'Highlight' )
+                'name' => __( 'Post Highlights' ),
+                'singular_name' => __( 'Post Highlight' )
             ),
             'public' => true,
             'has_archive' => false,

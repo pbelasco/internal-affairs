@@ -398,3 +398,8 @@ a[class^='tag-link-']:hover{
 	}
 	
 }
+
+.orbit-caption {
+	text-align: left;
+	padding: 20px;
+}
