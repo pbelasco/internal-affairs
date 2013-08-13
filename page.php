@@ -35,10 +35,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1>Not Found</h1>
+					    	<h1>Não encontrado</h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p>Desculpe, o que você procura parece nao estar publicado neste site.</p>
 					    </section>
 					    <footer>
 					    </footer>
