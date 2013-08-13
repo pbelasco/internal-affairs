@@ -1,4 +1,18 @@
 <?php get_header(); ?>
+
+<?php
+			global $post;
+			$tmp_post = $post;
+			$args = array(  'post_type' => 'highlight', 'numberposts' => 20 );
+			$myposts = get_posts( $args );
+			foreach( $myposts as $post ) : setup_postdata($post); 
+			?>
+  <span class="orbit-caption" id="caption_<?php the_ID(); ?>">
+    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+    <p><?php the_excerpt(); ?></p>
+  </span> 
+			<?php endforeach;?>
+
 	<div id="content">
 <?php
 	$orbit_slider = of_get_option('orbit_slider');
@@ -10,15 +24,7 @@
 	<div id="featured">
 		<!-- 970x365 imagem de fundo -->
 		<?php
-			// global $post;
-			// $tmp_post = $post;
-			// $args = array( 'numberposts' => 5 );
-			// $myposts = get_posts( $args );
-			// foreach( $myposts as $post ) :	setup_postdata($post); 
-			// 	$post_thumbnail_id = get_post_thumbnail_id();
-			// 	$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
-
-
+			// escreve os cabeçalhos
 			global $post;
 			$tmp_post = $post;
 			$args = array(  'post_type' => 'highlight', 'numberposts' => 20 );
@@ -27,24 +33,12 @@
 				$post_thumbnail_id = get_post_thumbnail_id();
 				$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
 		?>
-		<div>
-
-<!--   <div data-caption="#caption_<?php the_ID(); ?>">
-    <h4><?php the_title(); ?></h4>
-    <p><?php the_excerpt(); ?></p>
-  </div> 
-   -->
+		<div data-caption="#caption_<?php the_ID(); ?>">
 			<?php if(has_post_thumbnail()) :?>
 			<?php 
 				the_post_thumbnail('wpf-home-featured', "") ?>
-			
-	</div>				
+	</div>
 			<?php endif; ?> 
-		<!-- 
-					<?php the_excerpt(); ?>
-
-					<p style="clear:both"><a href="<?php the_permalink(); ?>" class="button nice radius" style="float: right;">Leia mais »</a></p>
-		</div> -->
 		<?php endforeach; ?>
 		<?php $post = $tmp_post; ?>
 	</div>
@@ -56,7 +50,7 @@
    $(window).load(function() {
        $('#featured').orbit({ 
        	fluid: '16x6',
-       	pauseOnHover: 'true',
+       	// pauseOnHover: 'true',
        	advanceSpeed: '8000'
        });
    });
@@ -96,42 +90,7 @@
 		<?php endforeach; ?>
 		<?php $post = $tmp_post; ?>
 
-<!-- 
 
-	<h1>Serviços</h1>
-	<p>A Printec tem x anos de presença no mercado, e oferece uma ampla gama de serviços para clientes x, y e z</p>
-	<div class="six columns"> 
-		<div class="panel">
-		
-			<ul>
-				<li>Assessoria de imprensa</li>
-				<li>Media training</li>
-				<li>Publicações customizadas</li>
-				<li>Lançamentos de produtos e serviços</li>
-				<li>Relacionamento com a comunidade, parceiros e clientes</li>
-			</ul>
-
-			<p>Saiba porque a printec tem todo o <i>know-how</i> e entende o que o seu negócio precisa para comunicar da forma certa.</p>
-			<div class="button">Saiba mais</div>
-		</div>
-	</div>
-
-	<div class="six columns"> 
-		<div class="panel">
-			<h4>Comunicação Interna</h4>
-			<ul>
-				<li>Consultoria</li>
-				<li>Mural</li>
-				<li>Jornais, revistas, intranet</li>
-				<li>Campanhas motivacionais</li>
-				<li>Estrategia de comunicação</li>
-				<li>Gerenciamento de crise</li>
-			</ul>
-			<p>Conheça alguns casos de sucesso, histórias de clientes e o que pensamos a respeito.</p>
-			<div class="button">Saiba mais</div>
-		</div>
-	</div>
- -->
 </div>
 <!-- end #main -->
 
