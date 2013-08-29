@@ -59,10 +59,10 @@
 <?php } ?>
 
 <div id="content">
-<div id="main" class="twelve columns" role="main">
-	
+<div id="main" role="main">
+	<div class="twelve columns">
 		<h1>Serviços</h1>
-
+</div>
 		<?php
 			global $post;
 			$tmp_post = $post;
@@ -73,9 +73,8 @@
 				$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
 		?>
 
-
 		<div class="six columns"> 
-			<div class="panel servico-panel">
+			<div class="servico-panel">
 				<h4><?php the_title();?></h4>
 				<?php the_post_thumbnail(array(80,80)); ?>
 					<p>	
