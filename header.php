@@ -139,6 +139,19 @@
 			<div class="twelve columns">
 				<header role="banner" id="top-header">
 					
+				<div id="hdrsocial">
+					<a href="http://www.twitter.com/printec">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="Twitter Dep_IvanValente"></a>	
+					<a href="https://www.facebook.com/pages/Printec-Comunica%C3%A7%C3%A3o/154311341247419?ref=br_tf">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Facebook"></a>		
+					<a href="/feed/">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/feed.png" alt="RSS"></a> 
+					<!-- <a href="http://www.flickr.com/photos/28236363@N03/sets/">
+				 		<img src="<?php echo get_template_directory_uri(); ?>/images/flickr.png" alt="Flickr Ivan Valente"></a>			
+					-->	
+					<a href="http://www.youtube.com/user/printec">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/tube.png" alt="Youtube Ivan Valente"></a>  
+				</div>
 					<div class="siteinfo">
 						<h1 style="display:none"><a class="brand" id="logo" href="<?php echo get_bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 						<h4 class="subhead" style="display:none"><?php echo get_bloginfo ( 'description' ); ?></h4>
@@ -167,4 +180,6 @@
 								//echo "</pre>";
 							}
 						?>
+			
+
 			</div>

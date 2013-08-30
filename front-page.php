@@ -62,7 +62,7 @@
 <div id="main" role="main">
 	<div class="twelve columns">
 		<h1>Serviços</h1>
-</div>
+	</div>
 		<?php
 			global $post;
 			$tmp_post = $post;
@@ -89,8 +89,49 @@
 		<?php endforeach; ?>
 		<?php $post = $tmp_post; ?>
 
-
+<!-- end of Services part -->
+<div class="twelve columns">
+	<h2> Últimos releases </h2>
 </div>
+
+
+<ul class="block-grid three-up mobile-two-up"">
+
+<!-- last news -->
+		<?php
+			global $post;
+			$tmp_post = $post;
+			$args = array(  'numberposts' => 6 );
+			$myposts = get_posts( $args );
+			foreach( $myposts as $post ) : setup_postdata($post); 
+				$post_thumbnail_id = get_post_thumbnail_id();
+				$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
+		?>
+
+		<li> 
+			<div class="news-panel">
+				<h4><?php the_title();?></h4>
+				<i><?php the_category(); ?></i>
+					<?php the_post_thumbnail(array(80,80), 'align:left'); ?>
+					<p>	
+						<?php the_excerpt(); ?>
+					</p>
+					<p>
+						<a class="button small" href="<?php the_permalink(); ?>"> leia o release »</a>
+					</p>
+			</div>
+		</li>
+		
+		<?php endforeach; ?>
+		<?php $post = $tmp_post; ?>
+
+
+</ul>
+<!-- end row -->
+</div>
+
+
+
 <!-- end #main -->
 
 		<?php //get_sidebar(); // sidebar 1 ?>

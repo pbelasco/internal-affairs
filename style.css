@@ -408,3 +408,20 @@ a[class^='tag-link-']:hover{
 	padding-top: 15px;
 	border-top: 1px solid #d2d2d2;
 }
+.news-panel {
+	padding-top: 15px;
+	border-top: 1px solid #d2d2d2;
+}
+
+#sidebar1 ul {
+	list-style-type: none;
+}
+
+.attachment-80x80 {
+	float: left;
+	padding: 0 8px 0 0;
+}
+#hdrsocial {
+	float: right;
+	padding-top: 100px;
+}
