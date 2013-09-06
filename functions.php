@@ -576,8 +576,8 @@ function create_post_type() {
     register_post_type( 'post_highlight',
         array(
             'labels' => array(
-                'name' => __( 'Post Highlights' ),
-                'singular_name' => __( 'Post Highlight' )
+                'name' => __( 'Highlights' ),
+                'singular_name' => __( 'Highlight' )
             ),
             'public' => true,
             'has_archive' => false,
