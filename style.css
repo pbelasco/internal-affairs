@@ -425,3 +425,11 @@ a[class^='tag-link-']:hover{
 	float: right;
 	padding-top: 100px;
 }
+
+.orbit-wrapper .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; transition: opacity 400ms; }
+.orbit-wrapper:hover .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+
+
+.post-categories li {
+	list-style-type: none;
+}

@@ -56,7 +56,8 @@
        $('#featured').orbit({ 
        	fluid: '16x6',
        	// pauseOnHover: 'true',
-       	advanceSpeed: '8000'
+       	advanceSpeed: '8000',
+       	animation: 'fade',
        });
    });
 </script>
@@ -115,7 +116,7 @@
 
 		<li> 
 			<div class="news-panel">
-				<h4><?php the_title();?></h4>
+				<h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
 				<i><?php the_category(); ?></i>
 					<?php the_post_thumbnail(array(80,80), 'align:left'); ?>
 					<p>	
