@@ -7,10 +7,15 @@
 			$myposts = get_posts( $args );
 			foreach( $myposts as $post ) : setup_postdata($post); 
 			?>
+	<?php if (!true) { ?>
+
   <span class="orbit-caption" id="caption_<?php the_ID(); ?>">
     <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
     <p><?php the_excerpt(); ?></p>
   </span> 
+
+  <?php } ?>
+
 			<?php endforeach;?>
 
 	
