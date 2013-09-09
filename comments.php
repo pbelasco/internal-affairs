@@ -57,7 +57,7 @@ The comments page for Bones
 		<?php else : ?>
 		
 			<!-- If comments are closed. -->
-			<div class="alert-box">Comments are closed.</div>
+			<!-- <div class="alert-box">Comments are closed.</div> -->
 			
 		<?php endif; ?>
 
