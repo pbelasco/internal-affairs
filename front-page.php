@@ -66,7 +66,7 @@
 
 <div id="content">
 <div id="main" role="main">
-	<div class="twelve columns">
+	<!-- <div class="twelve columns">
 		<h1>Serviços</h1>
 	</div>
 		<?php
@@ -93,7 +93,7 @@
 		</div>
 		
 		<?php endforeach; ?>
-		<?php $post = $tmp_post; ?>
+		<?php $post = $tmp_post; ?> -->
 
 <!-- end of Services part -->
 <div class="twelve columns">
