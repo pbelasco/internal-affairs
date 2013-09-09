@@ -40,8 +40,8 @@
 		?>
 		<div data-caption="#caption_<?php the_ID(); ?>">
 			<?php if(has_post_thumbnail()) :?>
-			<?php 
-				the_post_thumbnail('wpf-home-featured', "") ?>
+			<a href="<?php the_permalink() ?>"><?php 
+				the_post_thumbnail('wpf-home-featured', "") ?></a>
 	</div>
 			<?php endif; ?> 
 		<?php endforeach; ?>
