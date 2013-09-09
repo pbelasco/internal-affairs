@@ -1,6 +1,6 @@
 			<footer role="contentinfo">
 			
-					<div class="twelve columns">
+					<div class="twelve columns" style="border-top: solid 1px #ddd; padding: 15px;">
 
 						<div class="row">
 
