@@ -426,7 +426,7 @@ a[class^='tag-link-']:hover{
 }
 #hdrsocial {
 	float: right;
-	padding-top: 100px;
+	padding: 100px 15px 0 0;
 }
 
 .orbit-wrapper .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; transition: opacity 400ms; }
