@@ -26,6 +26,9 @@ single-bookmarks.php
 						<header class="twelve columns">
 							
 							<h1><?php the_title(); ?></h1>
+							<?php if(has_post_thumbnail()) :?>
+							<?php the_post_thumbnail('wpf-home-featured', "") ?>
+							<?php endif; ?> 
 					
 						</header> <!-- end article header -->
 					
