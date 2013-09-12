@@ -99,7 +99,8 @@
 -->
 
 <!-- end of Services part -->
-<div class="row ">
+<div class="row">
+	<div class="twelve columns">
 	<h2> Últimos releases </h2>
 
 
@@ -136,6 +137,7 @@
 
 </ul>
 </div>
+ </div>
 <!-- end row -->
 </div>
 
