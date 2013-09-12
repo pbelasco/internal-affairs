@@ -14,11 +14,10 @@
     <p><?php the_excerpt(); ?></p>
   </span> 
 
-  <?php } ?>
+<?php } ?>
 
-			<?php endforeach;?>
+<?php endforeach;?>
 
-	
 <?php
 	$orbit_slider = of_get_option('orbit_slider');
 	if ($orbit_slider){
@@ -56,7 +55,7 @@
        $('#featured').orbit({ 
        	fluid: '16x6',
        	// pauseOnHover: 'true',
-       	advanceSpeed: '8000',
+       	advanceSpeed: '5000',
        	animation: 'fade',
        });
    });
