@@ -74,7 +74,7 @@
 			$tmp_post = $post;
 			$args = array(  'post_type' => 'servico', 
 											'numberposts' => 20,
-											'orderby' => 'published_at', 
+											'orderby' => 'date', 
 											'order' => 'ASC'
 											);
 			$myposts = get_posts( $args );
