@@ -582,7 +582,7 @@ function create_post_type() {
             'public' => true,
             'has_archive' => false,
             'rewrite' => array('slug' => 'highlights'),
-            'supports' => array( 'titel', 'editor', 'author', 'thumbnail', 'excerpt' )
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
         )
     );
 
