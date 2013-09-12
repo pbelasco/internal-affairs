@@ -6,7 +6,7 @@
 	        <input type="text" id="search" placeholder="Busca" name="s" value="<?php the_search_query(); ?>" />
 	      </div>
 	      <div class="four mobile-one columns">
-	        <button type="submit" id="search-button" class="postfix button">Search</a>
+	        <button type="submit" id="search-button" class="postfix button">Buscar</a>
 	      </div>
   		</form>
     </div>

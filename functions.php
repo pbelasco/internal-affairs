@@ -237,8 +237,8 @@ add_filter('comment_class', 'add_class_comments');
 // Search Form
 function bones_wpsearch($form) {
     $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-    <label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
-    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search the Site..." />
+    <label class="screen-reader-text" for="s">' . __('Buscar:', 'bonestheme') . '</label>
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Pesquisar no site..." />
     <input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
     </form>';
     return $form;
@@ -252,7 +252,7 @@ function custom_password_form() {
 	global $post;
 	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
 	$o = '<div class="clearfix"><form action="' . get_option('siteurl') . '/wp-pass.php" method="post">
-	' . __( "<p>This post is password protected. To view it please enter your password below:</p>" ) . '
+	' . __( "<p>Este conteúdo está protegido por uma senha. Para acessar, informe a senha abaixo:</p>" ) . '
 	<div class="row collapse">
         <div class="twelve columns"><label for="' . $label . '">' . __( "Password:" ) . ' </label></div>
         <div class="eight columns">
