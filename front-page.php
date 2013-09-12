@@ -100,7 +100,7 @@
 <!-- end of Services part -->
 <div class="row">
 	<div class="twelve columns">
-	<h2> Últimos releases </h2>
+	<h2> Últimas notícias </h2>
 
 
 <ul class="block-grid three-up mobile-two-up"">
