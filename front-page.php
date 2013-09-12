@@ -72,7 +72,11 @@
 		<?php
 			global $post;
 			$tmp_post = $post;
-			$args = array(  'post_type' => 'servico', 'numberposts' => 20 );
+			$args = array(  'post_type' => 'servico', 
+											'numberposts' => 20,
+											'orderby' => 'published_at', 
+											'order' => 'ASC'
+											);
 			$myposts = get_posts( $args );
 			foreach( $myposts as $post ) : setup_postdata($post); 
 				$post_thumbnail_id = get_post_thumbnail_id();
