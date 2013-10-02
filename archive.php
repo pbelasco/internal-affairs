@@ -6,7 +6,7 @@
 				
 					<?php if (is_category()) { ?>
 						<h1 class="archive_title h2">
-							<span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?>
+							<span><?php _e("", "bonestheme"); ?></span> <?php single_cat_title(); ?>
 						</h1>
 					<?php } elseif (is_tag()) { ?> 
 						<h1 class="archive_title h2">
@@ -29,6 +29,9 @@
 					    	<span><?php _e("Yearly Archives:", "bonestheme"); ?>:</span> <?php the_time('Y'); ?>
 					    </h1>
 					<?php } ?>
+
+					<img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>"></img>
+
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
