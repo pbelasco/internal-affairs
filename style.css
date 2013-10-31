@@ -436,3 +436,7 @@ a[class^='tag-link-']:hover{
 .post-categories li {
 	list-style-type: none;
 }
+
+.block-grid.three-up > li {
+	min-height: 560px;
+}
