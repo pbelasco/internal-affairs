@@ -9,7 +9,7 @@ The comments page for Bones
 
   if ( post_password_required() ) { ?>
   	<div class="alert-box">
-    	This post is password protected. Enter the password to view comments.
+    	Este artigo é protegido por senha. Informe-a para ver os comentários.
   	</div>
   <?php
     return;
@@ -70,7 +70,7 @@ The comments page for Bones
 
 <section id="respond" class="respond-form">
 
-	<h3 id="comment-form-title"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+	<h3 id="comment-form-title"><?php comment_form_title( 'Deixe um comentário', 'Deixe um comentário para %s' ); ?></h3>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>
@@ -78,7 +78,7 @@ The comments page for Bones
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
   	<div class="alert-box warning">
-  		<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+  		<p>Você precisa estar <a href="<?php echo wp_login_url( get_permalink() ); ?>">logado</a> para comentar.</p>
   	</div>
 	<?php else : ?>
 
@@ -86,15 +86,15 @@ The comments page for Bones
 
 	<?php if ( is_user_logged_in() ) : ?>
 
-	<p class="comments-logged-in-as">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+	<p class="comments-logged-in-as">Registrado como <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out">Sair &raquo;</a></p>
 
 	<?php else : ?>
 	
 	<ul id="comment-form-elements" class="clearfix">
 		
 		<li>
-			  <label for="author">Name <?php if ($req) echo "*"; ?></label>
-			  <input type="text" class="input-text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="Your Name" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+			  <label for="author">Nome <?php if ($req) echo "*"; ?></label>
+			  <input type="text" class="input-text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="Seu Nome" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 		
 		<li>
@@ -111,9 +111,9 @@ The comments page for Bones
 
 	<?php endif; ?>
 	
-	<textarea name="comment" id="comment" placeholder="Your Comment Here..." tabindex="4"></textarea>
+	<textarea name="comment" id="comment" placeholder="Seu comentário ..." tabindex="4"></textarea>
 	
-    <input class="button medium radius blue nice" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+    <input class="button medium radius blue nice" name="submit" type="submit" id="submit" tabindex="5" value="Enviar" />
     <?php comment_id_fields(); ?>
 	
 	<?php do_action('comment_form', $post->ID); ?>
