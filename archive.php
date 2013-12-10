@@ -4,7 +4,7 @@
 			
 				<div id="main" class="eight columns clearfix" role="main">
 				
-					<div class="row">
+					<div class="row" style="border-bottom: 1px solid #666">
 						<div class="three columns">
 							<img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>"></img>
 						</div>
