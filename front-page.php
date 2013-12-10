@@ -54,8 +54,8 @@
    $(window).load(function() {
        $('#featured').orbit({ 
        	fluid: '16x6',
-       	// pauseOnHover: 'true',
-       	advanceSpeed: '8000',
+       	pauseOnHover: 'true',
+       	advanceSpeed: '5000',
        	animation: 'fade',
        });
    });
