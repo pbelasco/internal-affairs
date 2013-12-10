@@ -16,7 +16,7 @@
 							
 							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
 							
-														<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubdate><?php echo the_time('j/\m\/Y'); ?></time>  <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+														<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubdate><?php echo the_time('j\/m\/Y'); ?></time>  <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						
 						</header> <!-- end article header -->
 					
