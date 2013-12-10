@@ -45,7 +45,7 @@
 							
 							<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 							
-							<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubtime></time> <?php echo the_time('j \d\e m \d\e Y'); ?>  <span class="amp"></span> <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubtime></time> <?php echo the_time('j\/m\/Y'); ?>  <span class="amp"></span> <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						
 						</header> <!-- end article header -->
 					
