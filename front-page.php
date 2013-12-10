@@ -107,7 +107,7 @@
 	<h2>Notícias </h2>
 
 
-<ul class="block-grid three-up mobile-one">
+<ul class="block-grid large-three-up small-one-up">
 
 <!-- last news -->
 		<?php
