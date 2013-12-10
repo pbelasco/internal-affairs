@@ -45,7 +45,7 @@
 							
 							<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 							
-							<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubdate></time>  <span class="amp">&</span> <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Publicado em", "bonestheme"); ?> <time datetime="<?php echo the_time('j \d\e m \d\e Y'); ?>" pubtime></time> <?php echo the_time('j \d\e m \d\e Y'); ?>  <span class="amp"></span> <?php _e("em", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						
 						</header> <!-- end article header -->
 					
@@ -72,8 +72,8 @@
 					<?php } else { // if it is disabled, display regular wp prev & next links ?>
 						<nav class="wp-prev-next">
 							<ul class="clearfix">
-								<li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-								<li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
+								<li class="prev-link"><?php next_posts_link(_e('&laquo; Mais antigas', "bonestheme")) ?></li>
+								<li class="next-link"><?php previous_posts_link(_e('Mais recentes &raquo;', "bonestheme")) ?></li>
 							</ul>
 						</nav>
 					<?php } ?>
@@ -83,10 +83,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1><?php _e("No Posts Yet", "bonestheme"); ?></h1>
+					    	<h1><?php _e("Nenhuma publicação ainda.", "bonestheme"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p><?php _e("Sorry, What you were looking for is not here.", "bonestheme"); ?></p>
+					    	<p><?php _e("Desculpe. O conteo que você procura não está aqui.", "bonestheme"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>
