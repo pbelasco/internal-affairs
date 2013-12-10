@@ -11,7 +11,7 @@
 						<header>
 						
 							<?php //the_post_thumbnail( 'wpbs-featured' ); 
-								the_post_thumbnail('bones-thumb-300');
+								//the_post_thumbnail('bones-thumb-300');
 							?>
 							
 							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>

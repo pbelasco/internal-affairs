@@ -30,6 +30,10 @@
 					    </h1>
 					<?php } ?>
 
+					<p>
+						<?php echo category_description(); ?>
+					</p>
+
 					<img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>"></img>
 
 
