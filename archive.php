@@ -7,9 +7,18 @@
 					<div class="row ">
 						<div class="three columns">
 							<img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>"></img>
+							<br />
+
 						</div>
 						<div class="nine columns panel">
-
+<?php
+	$parent = get_cat_name($category[0]->category_parent);
+	$parent_ID = get_cat_ID($parent);
+	$parent_link = get_category_link($parent_ID);
+	if ($parent_link) {
+		echo '<a href="'. $parent_link .'">'. $parent .'</a>';
+	}
+	?>
 							<?php if (is_category()) { ?>
 								<h1 class="archive_title h2">
 									<span><?php _e("", "bonestheme"); ?></span> <?php single_cat_title(); ?>
