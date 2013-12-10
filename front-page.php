@@ -104,7 +104,7 @@
 <!-- end of Services part -->
 <div class="row">
 	<div class="twelve columns">
-	<h2> Últimas notícias </h2>
+	<h2>Notícias </h2>
 
 
 <ul class="block-grid three-up mobile-two-up"">
@@ -129,7 +129,7 @@
 						<?php the_excerpt(); ?>
 					</p>
 					<p>
-						<a class="button small" href="<?php the_permalink(); ?>"> leia o release »</a>
+						<a class="button small" href="<?php the_permalink(); ?>"> leia mais » </a>
 					</p>
 			</div>
 		</li>
