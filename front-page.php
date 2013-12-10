@@ -55,7 +55,7 @@
        $('#featured').orbit({ 
        	fluid: '16x6',
        	// pauseOnHover: 'true',
-       	advanceSpeed: '5000',
+       	advanceSpeed: '8000',
        	animation: 'fade',
        });
    });
@@ -107,7 +107,7 @@
 	<h2>Notícias </h2>
 
 
-<ul class="block-grid three-up mobile-two-up"">
+<ul class="block-grid three-up mobile-one">
 
 <!-- last news -->
 		<?php
