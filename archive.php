@@ -4,11 +4,11 @@
 			
 				<div id="main" class="eight columns clearfix" role="main">
 				
-					<div class="row panel">
+					<div class="row ">
 						<div class="three columns">
 							<img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>"></img>
 						</div>
-						<div class="nine columns">
+						<div class="nine columns panel">
 
 							<?php if (is_category()) { ?>
 								<h1 class="archive_title h2">
