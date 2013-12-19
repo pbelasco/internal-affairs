@@ -30,7 +30,7 @@
 						<footer>
 			
 							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
-							mailing: <a class="tags-title" href="<?php the_permalink(); ?>&mailing=1">Mailing</a>
+							<a class="tags-title" href="<?php the_permalink(); ?>&mailing=1">Mailing</a>
 							
 						</footer> <!-- end article footer -->
 					
