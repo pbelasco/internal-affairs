@@ -86,7 +86,7 @@ function bones_register_sidebars() {
     register_sidebar(array(
         'id' => 'sidebar-salas-de-imprensa',
         'name' => 'Barra lateral página de salas de imprensa',
-        'description' => 'Usado somente no templatre de salas de imprensa.',
+        'description' => 'Usado somente no template de salas de imprensa.',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h4 class="widgettitle">',
