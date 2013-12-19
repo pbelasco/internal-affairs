@@ -2,7 +2,7 @@
 			
 			<div id="content" class="clearfix">
 			
-				<div id="main" class="eight columns clearfix" role="main">
+				<div id="main" class="<?php echo (isset($_GET['mailing']) ? 'twelve' : 'eight'); ?> columns clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -56,7 +56,7 @@
 			
 				</div> <!-- end #main -->
     
-				<?php get_sidebar(); // sidebar 1 ?>
+				<?php if(!isset($_GET['mailing'])) { get_sidebar(); } // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 

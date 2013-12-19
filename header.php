@@ -157,7 +157,8 @@
 						<h4 class="subhead" style="display:none"><?php echo get_bloginfo ( 'description' ); ?></h4>
 					</div>
 			
-					<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+
+					<?php bones_main_nav()// Adjust using Menus in Wordpress Admin ?>
 
 					<div class="show-for-small menu-action">
 				  	    <a href="#sidebar" id="mobile-nav-button" class="sidebar-button small secondary button">
