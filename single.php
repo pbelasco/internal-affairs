@@ -30,6 +30,7 @@
 						<footer>
 			
 							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
+							mailing: <a class="tags-title" href="<?php the_permalink(); ?>&mailing=1">Mailing</a>
 							
 						</footer> <!-- end article footer -->
 					
@@ -57,7 +58,7 @@
 				</div> <!-- end #main -->
     
 				<?php if(!isset($_GET['mailing'])) { get_sidebar(); } // sidebar 1 ?>
-    
+    	
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
