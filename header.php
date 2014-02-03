@@ -149,7 +149,7 @@
 					<!-- <a href="http://www.flickr.com/photos/28236363@N03/sets/">
 				 		<img src="<?php echo get_template_directory_uri(); ?>/images/flickr.png" alt="Flickr Ivan Valente"></a>			
 					-->	
-					<a href="http://www.youtube.com/user/printec">
+					<a href="http://www.youtube.com/user/printeccomunicacao">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/tube.png" alt="Youtube Ivan Valente"></a>  
 				</div>
 					<div class="siteinfo">
