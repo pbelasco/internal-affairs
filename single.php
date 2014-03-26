@@ -28,7 +28,7 @@
 						</section> <!-- end article section -->
 						
 						<footer>
-							<?php if !isset($_GET['mailing']) { ?>
+							<?php if (!isset($_GET['mailing'])) { ?>
 							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
 							<a class="tags-title" href="<?php the_permalink(); ?>&mailing=1">Mailing</a>
 							<?php } ?>
