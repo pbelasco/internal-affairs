@@ -28,9 +28,10 @@
 						</section> <!-- end article section -->
 						
 						<footer>
-			
+							<?php if !isset($_GET['mailing']) { ?>
 							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
 							<a class="tags-title" href="<?php the_permalink(); ?>&mailing=1">Mailing</a>
+							<?php } ?>
 							
 						</footer> <!-- end article footer -->
 					
@@ -47,7 +48,7 @@
 					    	<h1>Not Found</h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p>Desculpe, o que você procura não está neste endereço.</p>
 					    </section>
 					    <footer>
 					    </footer>
